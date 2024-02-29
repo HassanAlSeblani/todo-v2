@@ -1,0 +1,5 @@
+<ul *ngFor="let t of list" [ngClass]="{completo: t.completato}">
+    {{t.id}}
+    <li (click)="toggle(t.id)">{{t.descrizione}}</li>
+    <button (click)="delete(t.id)">X</button>
+</ul>
